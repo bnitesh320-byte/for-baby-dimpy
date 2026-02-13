@@ -1,0 +1,55 @@
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#ff758c,#ff7eb3);
+    overflow:hidden;
+    text-align:center;
+    color:white;
+}
+
+.container {
+    padding:20px;
+    margin-top:25vh;
+}
+
+h1 { font-size:24px; }
+
+button {
+    padding:14px 22px;
+    font-size:18px;
+    border:none;
+    border-radius:30px;
+    margin:10px;
+}
+
+#noBtn { background:#ff4d6d; }
+#yesBtn { background:#28a745; }
+
+.hidden { display:none; }
+
+/* Floating hearts */
+.hearts span {
+    position:absolute;
+    font-size:20px;
+    animation:float 6s linear infinite;
+}
+
+@keyframes float {
+    from { transform:translateY(100vh); opacity:1; }
+    to { transform:translateY(-10vh); opacity:0; }
+}
+
+/* Game area */
+#playArea {
+    width:90%;
+    height:300px;
+    margin:auto;
+    background:rgba(255,255,255,0.2);
+    border-radius:20px;
+    position:relative;
+}
+
+.heart {
+    position:absolute;
+    font-size:28px;
+}
